@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>COFFINS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-top">
+        <img src="coffin-logo.jpg" class="img-fluid float-left" />
+        <h1 class="text-center">COFFIN FUNERAL SERVICES</h1>
+      </div>
+      <div class="main-container">
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="border-thick">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Item</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Amount</th>
+                    <th>Total</th>
+                    <th></th>
+                  </tr>
+                </thead>
+              </table>
+              <div class="items-table">
+                <table class="table">
+                  <tbody class="tbody">
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Van</td>
+                      <td>Makuyu-Kibwezi</td>
+                      <td>10,000</td>
+                      <td>
+                        <input
+                          type="number"
+                          class="form-control-sm text-right"
+                          value="2"
+                        />
+                      </td>
+                      <td><strong>20,000</strong></td>
+                      <td>
+                        <i
+                          class="fa fa-times text-danger"
+                          aria-hidden="true"
+                        ></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Coffin</td>
+                      <td>-</td>
+                      <td>10,000</td>
+                      <td>
+                        <input
+                          type="number"
+                          class="form-control-sm text-right"
+                          value="1"
+                        />
+                      </td>
+                      <td><strong>10,000</strong></td>
+                      <td>
+                        <i
+                          class="fa fa-times text-danger"
+                          aria-hidden="true"
+                        ></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Canvas Tents</td>
+                      <td>capacity - 100</td>
+                      <td>1,000</td>
+                      <td>
+                        <input
+                          type="number"
+                          class="form-control-sm text-right"
+                          value="7"
+                        />
+                      </td>
+                      <td><strong>7,000</strong></td>
+                      <td>
+                        <i
+                          class="fa fa-times text-danger"
+                          aria-hidden="true"
+                        ></i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <hr />
+              <div class="items-bottom">
+                Total
+                <strong class="total-amount float-right text-danger"
+                  >37,000</strong
+                >
+              </div>
+            </div>
+            <div class="items-buttons">
+              <button type="button" class="btn btn-danger btn-lg">
+                <i class="fa fa-times" aria-hidden="true"></i>
+                Cancel
+              </button>
+              <button type="button" class="btn btn-primary btn-lg float-right">
+                <i class="fa fa-print" aria-hidden="true"></i>
+                Print
+              </button>
+            </div>
+            <div class="dashboard">
+              <i class="fa fa-user text-light" aria-hidden="true"></i>
+              MUSA
+              <i class="fa fa-power-off text-danger" aria-hidden="true"></i>
+              <span class="vertical-line"></span>
+              &nbsp
+              <i class="fa fa-cog" aria-hidden="true"></i>
+              <i class="fa fa-suitcase" aria-hidden="true"></i>
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="border-thick items-input">
+              <form action="/action_page.php">
+                <div class="form-group">
+                  <label class="font-weight-bold" for="email">Item:</label>
+                  <select class="form-control form-control-sm" id="sel1">
+                    <option>Items</option>
+                    <option>van</option>
+                    <option>Tent</option>
+                    <option>Coffin</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="font-weight-bold" for="pwd">From:</label>
+                  <select class="form-control form-control-sm" id="sel1" disabled>
+                    <option>- Select Location -</option>
+                    <option>Makuyu</option>
+                    <option>Mbeere</option>
+                    <option>Eldoret</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="font-weight-bold" for="pwd">To:</label>
+                  <select class="form-control form-control-sm" id="sel1" disabled>
+                    <option>- Select Location -</option>
+                    <option>Makuyu</option>
+                    <option>Mbeere</option>
+                    <option>Eldoret</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="font-weight-bold" for="pwd">Price:</label>
+                  <input
+                    type="number"
+                    class="form-control form-control-sm text-right"
+                    value="0.00"
+                    disabled
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="font-weight-bold" for="pwd">Amount:</label>
+                  <input
+                    type="number"
+                    class="form-control text-right"
+                    placeholder="0.00"
+                  />
+                </div>
+              </form>
+              <hr />
+              <form class="items-paid-container">
+                <div class="form-group">
+                  <label class="font-weight-bold" for="pwd">PAID:</label>
+                  <input
+                    type="number"
+                    class="form-control text-right text-success items-paid"
+                    placeholder="0.00"
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="font-weight-bold" for="pwd">BALANCE:</label>
+                  <input
+                    type="number"
+                    class="form-control text-right text-info balance"
+                    value="0.00"
+                    disabled
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
