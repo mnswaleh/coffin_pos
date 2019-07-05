@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>COFFINS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-top">
+        <img src="coffin-logo.jpg" class="img-fluid float-left" />
+        <h1 class="text-center">COFFIN FUNERAL SERVICES</h1>
+      </div>
+      <div class="main-container">
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="border-thick">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Name &nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th>Job</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Gender</th>
+                  </tr>
+                </thead>
+              </table>
+              <div class="items-table employees-list">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Vincent Kiili</td>
+                      <td>Carpenter</td>
+                      <td>0792342562</td>
+                      <td>vincent@gmail.com</td>
+                      <td>Male</td>
+                      <td>
+                        <i
+                          class="fa fa-edit text-primary"
+                          aria-hidden="true"
+                        ></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Collins Swazuri</td>
+                      <td>Shop attendant</td>
+                      <td>0783625273</td>
+                      <td>collins@gmail.com</td>
+                      <td>Male</td>
+                      <td>
+                        <i
+                          class="fa fa-edit text-primary"
+                          aria-hidden="true"
+                        ></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Carol Nderi</td>
+                      <td>Driver</td>
+                      <td>0732378429</td>
+                      <td>nderi@gmail.com</td>
+                      <td>Female</td>
+                      <td>
+                        <i
+                          class="fa fa-edit text-primary"
+                          aria-hidden="true"
+                        ></i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="items-buttons">
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    name="optradio"
+                    checked
+                  />Active
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    name="optradio"
+                  />Inactive
+                </label>
+              </div>
+              <button type="button" class="btn btn-primary btn-lg float-right">
+                <i class="fa fa-user-plus" aria-hidden="true"></i>
+                Add
+              </button>
+            </div>
+            <div class="dashboard">
+              <i class="fa fa-user text-light" aria-hidden="true"></i>
+              MUSA
+              <i class="fa fa-power-off text-danger" aria-hidden="true"></i>
+              <span class="vertical-line"></span>
+              <i class="fa fa-cog" aria-hidden="true"></i>
+              <i class="fa fa-suitcase" aria-hidden="true"></i>
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <span class="vertical-line"></span>
+              <a href="index.html" class="btn"
+                ><i class="fa fa-cart-plus" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="border-thick items-input">
+              <h3 class="text-center">EDIT</h3>
+              <form action="/action_page.php">
+                <div class="form-group">
+                  <label class="font-weight-bold" for="email"
+                    >First Name:</label
+                  >
+                  <input type="text" class="form-control form-control-sm" />
+                </div>
+                <div class="form-group">
+                  <label class="font-weight-bold" for="pwd">Second Name:</label>
+                  <input type="text" class="form-control form-control-sm" />
+                </div>
+                <div class="form-group">
+                  <label class="font-weight-bold" for="pwd">Gender:</label
+                  ><br />
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="gender"
+                        checked
+                      />Male
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="gender"
+                      />Female
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="font-weight-bold" for="pwd">Job:</label>
+                  <select class="form-control form-control-sm" id="sel1">
+                    <option>- Job -</option>
+                    <option>Carpenter</option>
+                    <option>Driver</option>
+                    <option>Shop attendant</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="font-weight-bold" for="pwd">Phone:</label>
+                  <input type="text" class="form-control form-control-sm" />
+                </div>
+                <div class="form-group">
+                  <label class="font-weight-bold" for="pwd">Email:</label>
+                  <input type="email" class="form-control form-control-sm" />
+                </div>
+                <div class="form-group">
+                  <label class="font-weight-bold" for="pwd">Status:</label
+                  ><br />
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="status"
+                        checked
+                      />Active
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="status"
+                      />Inactive
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <button type="reset" class="btn btn-danger">Cancel</button>
+                  <button type="submit" class="btn btn-primary float-right">
+                    Save
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -30,11 +30,11 @@
 .items-table {
   margin-top: -18px;
   position: relative;
-  height: 280px;
+  height: 345px;
   overflow: auto;
 }
 
-hr{
+hr {
   border: none;
   height: 2px;
   background-color: #000000;
@@ -47,32 +47,50 @@ hr{
 
 .items-buttons {
   padding: 10px;
+  min-height: 65px;
 }
 
-.dashboard{
+.dashboard {
   margin-top: 5px;
   background-color: #3fb2b6;
-  padding: 1px;
+  padding-left: 5px;
   font-size: 3em;
 }
-.vertical-line{
+.vertical-line {
   border-left: solid 2px black;
   height: 100%;
+  margin-right: 10px;
 }
 
 .items-input {
-  background-color: #e4e4e4;
+  background-color: #ececec;
   padding: 10px;
+  height: 695px;
 }
 
-.items-paid-container{
+.items-paid-container {
   font-size: 1em;
 }
 
-.items-paid{
-  font-size: 1em;
-}
-
-.balance{
+.items-paid {
   font-size: 2em;
+  border-color: #03c55a;
+}
+
+.items-paid :active {
+  border-color: #03c55a;
+}
+
+.balance {
+  font-size: 3em;
+  border-color: #0abcc9;
+}
+
+.employees-list {
+  height: 500px;
+}
+
+.dashboard .btn {
+  padding: 0;
+  font: inherit;
 }
